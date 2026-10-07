@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Caiet de orientare în programa Evaluării Naționale, clasa a VIII-a.">
+  <title>Caiet EN VIII · 2026–2027</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#continut">Sari la conținut</a>
+  <header class="site-header">
+    <a class="brand" href="#acasa" aria-label="Caiet EN VIII — Acasă"><span class="brand-mark" aria-hidden="true">EN</span><span><strong>Caiet EN VIII</strong><small>2026–2027</small></span></a>
+    <nav aria-label="Navigare principală"><a href="#acasa" data-p="acasa">Acasă</a><a href="#asistent" data-p="asistent">Asistent</a><a href="#agenda" data-p="agenda">Agenda</a></nav>
+  </header>
+  <main id="continut">
+    <section id="acasa" class="page">
+      <div class="hero card-paper"><p class="eyebrow">Evaluarea Națională · clasa a VIII-a</p><h1>Programa, pusă în ordine.</h1><p class="lead">Caută o noțiune la Matematică sau Română, apoi păstrează în agendă ce ai de repetat. Totul rămâne pe dispozitivul tău.</p><div class="hero-actions"><a class="btn" href="#asistent">Caută în programă <span aria-hidden="true">→</span></a><a class="btn btn-quiet" href="#agenda">Deschide agenda</a></div></div>
+      <div class="fact-grid" aria-label="Ce găsești aici"><article><strong>2 materii</strong><span>Matematică și Română</span></article><article><strong>Asistent local</strong><span>bazat pe cuvinte-cheie</span></article><article><strong>Local</strong><span>notițele tale rămân aici</span></article></div>
+      <section class="guide-panel"><p class="eyebrow">Ghid de căutare</p><h2>Scrie precis, găsește mai repede</h2><p class="note">Asistentul nu „gândește” și nu folosește internetul: compară cuvintele tale cu noțiunile din programă. O potrivire găsită indică o noțiune din programă, nu înlocuiește verificarea cu profesorul sau cu documentul oficial.</p><ol class="guide"><li><b>Un singur subiect:</b> „Intră teorema lui Thales?”, nu „Ce intră la geometrie?”</li><li><b>Termenul din manual:</b> „c.m.m.d.c.”, „complement direct”, „diftong”.</li><li><b>Materia potrivită:</b> selectează Matematică sau Română înainte de căutare.</li><li><b>Dacă nu apare nimic:</b> încearcă o formă mai scurtă sau un sinonim; rezultatul nu stabilește singur dacă o noțiune este sau nu în programă.</li></ol></section>
+    </section>
+    <section id="asistent" class="page" hidden><div class="section-heading"><p class="eyebrow">Căutare ghidată</p><h1>Asistent de programă</h1><p class="note">Potrivește prefixele cuvintelor din întrebare cu cuvinte-cheie pregătite din programă. Funcționează local, fără API-uri.</p></div><div class="assistant-shell"><div class="tabs" role="tablist" aria-label="Alege materia"><button class="tab on" type="button" role="tab" aria-selected="true" data-s="mate">Matematică</button><button class="tab" type="button" role="tab" aria-selected="false" data-s="ro">Limba română</button></div><div class="conversation-bar"><span>Rezultatele acestei conversații</span><button id="clear-chat" class="text-btn" type="button">Resetează conversația</button></div><div id="log" class="results" aria-live="polite" aria-label="Rezultatele căutării"><p class="bot">Scrie o noțiune, de exemplu „intră Pitagora?” sau „complement direct”.</p></div><div class="ask"><label class="sr-only" for="q">Întrebarea ta</label><input id="q" type="search" placeholder="Ex.: intră c.m.m.d.c. în programă?" autocomplete="off"><button id="go" class="btn" type="button">Caută</button></div></div></section>
+    <section id="agenda" class="page" hidden><div class="section-heading"><p class="eyebrow">Spațiul tău de lucru</p><h1>Agenda mea</h1><p class="note">Agenda se salvează numai în acest browser. Exportă periodic o copie JSON dacă vrei să o păstrezi.</p></div><div class="agenda-tools card-paper"><div class="ask"><label class="sr-only" for="fname">Numele folderului nou</label><input id="fname" placeholder="Folder nou, de exemplu: Geometrie"><button id="addf" class="btn" type="button">Creează folder</button></div><div class="data-actions" aria-label="Copie de siguranță a agendei"><button id="exporta" class="text-btn" type="button">Exportă agenda (.json)</button><label class="text-btn file-btn" for="importa">Importă agenda (.json)</label><input id="importa" type="file" accept="application/json,.json" hidden></div></div><div id="folders" class="folders" aria-label="Foldere"></div><div id="notes"></div></section>
+  </main>
+  <footer class="site-footer">Creat de <strong>Cupeș Matei</strong></footer>
+  <script src="data.js"></script><script src="app.js"></script>
+</body>
+</html>
